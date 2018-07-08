@@ -163,12 +163,12 @@ int main(void)
 			switch (cCombined) {
 				case VAL_SEEK:
 					/* Seek: This could have been held in which case a different code is required */
-					if (cCombined == cCombinedLast) {
-						/* held */
-						JVCCommand(JVC_SKIPFDH);
-					} else {
+					if (cCombined != cCombinedLast) {
 						/* first time */
 						JVCCommand(JVC_SKIPFD);
+					} else {
+						/* held */
+						JVCCommand(JVC_SKIPFDH);
 					}
 					break;
 					
