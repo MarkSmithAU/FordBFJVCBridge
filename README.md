@@ -10,7 +10,7 @@ divider to get the correct voltage if required.
 On the Ford BF tap the line under the steering column (Red/White stripe) and that will be a 5v signal that changes with the button presses.
 Do NOT cut this wire as it also operates other functionality on the steering wheel such as overspeed alarm control (mode button).
 
-The whole circuit can be powered from the 5v amplifier line on the back of the JVC which has power when the unit is on.
+The whole circuit can be powered from the amplifier line on the back of the JVC which has power when the unit is on.
 
 I/O and connection notes:
 PORTB0 is the line to connect to the JVC remote control input.
